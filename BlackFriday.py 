@@ -1,0 +1,40 @@
+
+
+opcao = 1
+
+while opcao != 0:
+
+    valor = float(input("Digite o valor da compra: "))
+
+    print("-" * 50)
+    print("[1] À vista - 15% de desconto")
+    print("[2] Cartão de débito - 10% de desconto")
+    print("[3] Cartão de crédito - 5% de desconto")
+    print("[0] Sair")
+
+    opcao = int(input("Selecione a opção desejada: "))
+    print("-" * 50)
+
+    if opcao == 1:
+        desconto = valor * 0.15
+        total = valor - desconto
+        print("Desconto: R$", desconto)
+        print("Valor final: R$", total)
+
+    elif opcao == 2:
+        desconto = valor * 0.10
+        total = valor - desconto
+        print("Desconto: R$", desconto)
+        print("Valor final: R$", total)
+
+    elif opcao == 3:
+        desconto = valor * 0.05
+        total = valor - desconto
+        print("Desconto: R$", desconto)
+        print("Valor final: R$", total)
+
+    elif opcao == 0:
+        print("Programa encerrado!")
+
+    else:
+        print("Opção inválida!")
