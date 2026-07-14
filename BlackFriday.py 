@@ -37,4 +37,4 @@ while opcao != 0:
         print("Programa encerrado!")
 
     else:
-        print("Opção inválida!")
+        print("Opção inválida!"
